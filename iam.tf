@@ -1,8 +1,7 @@
-resource "aws_iam_user" "lbb" {
-  name = "loadbalancer"
-  path = "/system/"
-
+resource "aws_iam_user" "lb" {
+  name = "loadbalancer"  
+  path = "/system/"  
   tags = {
-    tag-key = "lbb user"
+    tag-key = "lb user"
   }
 }
